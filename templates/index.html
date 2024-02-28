@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chips Map</title>
+</head>
+<body>
+    <img id="myImage" src="{{ url_for('static', filename='main.jpg') }}" alt="Main Image" width="900" height="900">
+    <script>
+        var refreshInterval = 60000;
+        var imageUrl = "/static/main.jpg";
+        var imgElement = document.getElementById("myImage");
+        setInterval(function() {
+            var timestamp = new Date().getTime();
+            var newImageUrl = imageUrl + "?timestamp=" + timestamp;
+            imgElement.src = newImageUrl;
+        }, refreshInterval);
+    </script>
+</body>
+</html>
