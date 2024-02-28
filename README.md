@@ -1,6 +1,9 @@
 # Chips_map
 用于生成股票中的筹码分布图。
 
+## 效果图
+![](https://github.com/danielchan-25/chips_map/blob/main/demo.png)
+
 ## 运行
 ```shell
 python chips_main.py    # 主程序
